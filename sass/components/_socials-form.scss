@@ -1,0 +1,102 @@
+.socials-form {
+    margin-left: auto;
+  }
+  
+.follow-form {
+  
+    display: flex;
+    gap: 12px;
+  }
+  
+.form-field {
+    flex-basis: 358px;
+    position: relative;
+  }
+  
+.form-field-label {
+    display: block;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+.form-input {
+    width: 358px;
+    height: 50px;
+    outline: transparent;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--accent-color);
+    padding-left: 16px;
+  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  }
+  
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+ 
+  
+.form-input:focus::placeholder {
+    opacity: 1;
+  }
+  
+.form-input:focus,
+  .form-input:not(:placeholder-shown) + .form-field-label {
+    border-color: var(--accent-color);
+  }
+  
+.form-field-label {
+    position: absolute;
+    left: 16px;
+    bottom: 15px;
+  
+    transform: translateX(0) scale(1);
+    
+  
+    transition: color cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+.form-input:focus + .form-field-label,
+.form-input:not(:placeholder-shown) + .form-field-label {
+    transform: translateX(-75px) scale(1);
+  }
+  
+.form-btn {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    background-color: var(--button-color);
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  

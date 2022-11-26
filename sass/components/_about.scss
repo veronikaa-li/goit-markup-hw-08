@@ -1,0 +1,37 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .about__title {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+  }
+  .about__title--name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
+  .about__title--text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  .conteiner__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--icon-background-color);
+    border-radius: 4px;
+  }
