@@ -1,11 +1,30 @@
 .about {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (min-width: $mobile) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   .about__title {
-    display: flex;
-    gap: 30px;
     text-decoration: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      gap: 30px;
+      
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      gap: 30px;
+    }
   }
   .about__title--name {
     margin-bottom: 10px;
@@ -15,6 +34,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $mobile) {
+      text-align: center;
+      
+    }
   }
   .about__title--text {
     margin: 0;
@@ -25,13 +49,24 @@
     color: var(--title-text-color);
   }
   .conteiner__icon {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     background-color: var(--icon-background-color);
     border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;      
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
   }
