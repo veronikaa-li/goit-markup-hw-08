@@ -312,6 +312,11 @@ address {
 }
 
 .about__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
@@ -354,14 +359,23 @@ address {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 480px) {
+  .about__title--text {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__title--text {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__title--text {
+    width: 1200px;
+  }
+}
 
 .conteiner__icon {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -373,6 +387,12 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
 }
@@ -381,6 +401,12 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
 }
