@@ -3,13 +3,17 @@
     padding: 94px 0;
   }
   .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
   }
   .team__scroll {
     display: flex;
