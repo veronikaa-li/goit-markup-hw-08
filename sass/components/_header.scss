@@ -14,12 +14,13 @@
   }
 
 .header__logo {
-    margin-right: 93px;
+  margin-right: 93px;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: #000000;
+
   }
 
 .header__logo--accent {
@@ -52,10 +53,14 @@
   }
 
 .header__contact {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 30px;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      gap: 30px;
+    }
   }
 .header__contact--iteam {
     position: relative;

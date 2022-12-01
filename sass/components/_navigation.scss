@@ -1,8 +1,14 @@
 .nav__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
+    display: none;
+
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      bottom: 0;
+      
+    }
   }
   .nav__iteam {
     position: relative;
