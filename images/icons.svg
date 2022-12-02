@@ -87,5 +87,12 @@
     <symbol id="icon-icon-check" viewBox="0 0 42 32">
       <path fill="#fff" stroke="#fff" stroke-width=".64" d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z" style="fill:var(--color1, #fff);stroke:var(--color1, #fff)"/>
     </symbol>
+    <!--Mobile menu-->
+    <symbol id="icon-menu" viewBox="0 0 20 32">
+     <path fill="#212121" fill-rule="evenodd" d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" clip-rule="evenodd"/>
+    </symbol>
+    <symbol id="cross" viewBox="0 0 20 32">
+     <path fill="#212121" d="M18.667 1.88 16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453Z"/>
+    </symbol>
   </defs>
 </svg>

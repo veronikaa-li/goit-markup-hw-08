@@ -1,3 +1,6 @@
+// .nav {
+//   d;
+// }
 .nav__list {
     display: none;
 
@@ -16,6 +19,7 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
+  
   }
   
   .nav__link {

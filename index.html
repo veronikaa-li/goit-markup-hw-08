@@ -35,24 +35,12 @@
             <li class="nav__iteam"><a href="" class="nav__link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header__contact list">
-          <li class="header__contact--iteam">
-            <a class="header__contact--link link" href="mailto:info@devstudio.com">
-              <svg class="header__contact--icon link" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header__contact--iteam">
-            <a class="header__contact--link link" href="tel:+380961111111"
-              ><svg class="header__contact--icon link" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
 
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg
             width="24"
             height="24"
@@ -67,9 +55,29 @@
             ></path>
           </svg>
         </button>
+
+        <!-- <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    
+          <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            
+          </svg>
+        </button> -->
+        <ul class="header__contact list">
+          <li class="header__contact--iteam">
+            <a class="header__contact--link link" href="mailto:info@devstudio.com">
+              <svg class="header__contact--icon link" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a>
+          </li>
+          <li class="header__contact--iteam">
+            <a class="header__contact--link link" href="tel:+380961111111"
+              ><svg class="header__contact--icon link" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>   
+          </li>
+        </ul>
       </div>
     </header>
-
     <main>
       <!-- <section class="hero">
       <div class="container">
@@ -132,7 +140,7 @@
       </section>
 
       <!--Чим ми займаємось-->
-      <!-- <section class="picture">
+      <section class="picture">
       <div class="container">
         <h2 class="picture__title">Чим ми займаємось</h2>
         <ul class="picture__name list">
@@ -156,7 +164,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
       <!--Our team-->
       <!-- <section class="team">
@@ -511,22 +519,22 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="./index.html" class="mobile-menu-title link">Студія</a></li>
-        <li><a href="./portfolio.html" class="mobile-menu-title link">Портфоліо</a></li>
-        <li><a href="" class="mobile-menu-title link">Контакти</a></li>
+        <li><a href="./index.html" class="mobile-menu-title link list">Студія</a></li>
+        <li><a href="./portfolio.html" class="mobile-menu-title link list">Портфоліо</a></li>
+        <li><a href="" class="mobile-menu-title link list">Контакти</a></li>
       </ul>
       <ul class="mobile-contacts">
-        <li class="mobile-contacts-iteam">
+        <li class="mobile-contacts-iteam list">
           <a href="tel:+380961111111" class="mobile-contacts-title link">+38 096 111 11 11</a>
         </li>
-        <li class="mobile-contacts-iteam">
+        <li class="mobile-contacts-iteam list">
           <a href="mailto:info@devstudio.com" class="mobile-contacts-title link"
             >info@devstudio.com</a
           >
         </li>
       </ul>
       <ul class="mobile-socials">
-        <li class="mobile-socials-iteam">
+        <li class="mobile-socials-iteam list">
           <a
             href="https://instagram.com"
             target="_blank"
@@ -536,17 +544,17 @@
             >Instagram</a
           >
         </li>
-        <li class="mobile-socials-iteam">
+        <li class="mobile-socials-iteam list">
           <a
             href="https://twitter.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
             aria-label="Twitter"
             class="mobile-socials-link link"
-            >class="link">Twitter</a
+            >Twitter</a
           >
         </li>
-        <li class="mobile-socials-iteam">
+        <li class="mobile-socials-iteam list">
           <a
             href="https://facebook.com"
             target="_blank"
@@ -556,18 +564,19 @@
             >Facebook</a
           >
         </li>
-        <li class="mobile-socials-iteam">
+        <li class="mobile-socials-iteam list">
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
             aria-label="Linkedin"
             class="mobile-socials-link link"
-          ></a
-          >LinkedIn
+          >LinkedIn</a
+          >
         </li>
       </ul>
     </div>
+
 
     <script src="./js/modal.js"></script>
     <script

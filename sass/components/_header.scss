@@ -54,6 +54,7 @@
 
 .header__contact {
     display: none;
+    margin: 0;
 
     @media screen and (min-width: $tablet) {
       display: flex;
