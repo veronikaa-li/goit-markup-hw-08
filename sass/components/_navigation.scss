@@ -19,6 +19,12 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
+
+    @media screen and (min-width: $tablet) {
+      &:not(:last-child) {
+        margin-right: 51px;
+      }
+    }
   
   }
   
