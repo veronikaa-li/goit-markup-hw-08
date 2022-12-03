@@ -53,6 +53,10 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  display: flex;
+  flex-direction: column;
+
   width: 100vw;
   height: 100vh;
   padding: 32px;
@@ -76,13 +80,13 @@
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: auto;
   list-style: none;
 }
 
 .mobile-menu .link {
   display: block;
-  padding: 16px;
+  padding: 10px;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -111,7 +115,14 @@
     }
   }
 
+  .mobile-contacts-iteam {
+    margin-bottom: 32px;
+  }
+
   .mobile-contacts-title {
+    margin-left: 40px;
+
+
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 24px;
@@ -127,6 +138,14 @@
     }
   }
 
+
+  .mobile-socials {
+    margin-left: 40px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
   .mobile-socials-link {
     font-family: 'Roboto';
     font-weight: 500;
