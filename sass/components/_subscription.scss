@@ -1,22 +1,47 @@
 .social-networks {
-    margin-left: 70px;
+  margin-left: 70px;
+  @media screen and (min-width: $mobile) {
+    margin: 60px auto;
+
+    width: 207px;
   }
+}
 .subscription {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    // align-items: center;
+    // justify-content: center;
+  
+}
+}
 
 .socials {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 }
-  
+
 .footer-socials-link {
   display: flex;
   align-items: center;
@@ -27,20 +52,17 @@
   color: var(--accent-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-      color: var(--accent-color);
-      background-color: var(--button-color);
+    color: var(--accent-color);
+    background-color: var(--button-color);
   }
 }
 
 .socials-icon {
   fill: currentColor;
 }
-  
-
-  

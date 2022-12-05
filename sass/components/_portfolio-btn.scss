@@ -3,11 +3,37 @@
   }
   
 .btn-list {
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+   }
+
+   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+   }
+ @media screen and (min-width: $desktop) {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+ }
+}
+ .button-menu-mobile {
+
+  @media screen and (min-width: $mobile) {
+    margin-right: 119px;
   }
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
+  }
+ }
+  
 .second-btn {
     padding: 6px 22px;
     border-radius: 4px;

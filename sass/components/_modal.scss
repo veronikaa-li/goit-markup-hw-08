@@ -6,6 +6,17 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: $mobile) {
+      width: 100%;
+      align-items: center;
+      
+    }
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+      align-items: center;
+      
+    }
   }
   
   

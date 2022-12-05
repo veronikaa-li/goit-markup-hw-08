@@ -34,6 +34,22 @@
 .form-agreement-text {
     user-select: none;
     color: var(--title-text-color);
+
+    @media screen and (min-width: $mobile) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.03em;
+      color: #757575;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.03em;
+      color: #757575;
+    }
   }
   
 .form-agreement-link {
