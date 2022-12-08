@@ -54,8 +54,8 @@
   color: var(--primary-text-color);
 
   @media screen and (min-width: $mobile) {
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  width: 320px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -75,6 +75,11 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (min-width: $mobile) {
+  
+    width: 320px;
+    }
 
   @media screen and (min-width: $tablet) {
     display: block;
@@ -98,7 +103,7 @@
   border-radius: 4px;
 
   @media screen and (min-width: $mobile) {
-    width: 450px; 
+    width: 320px; 
   }
 
   @media screen and (min-width: $tablet) {
