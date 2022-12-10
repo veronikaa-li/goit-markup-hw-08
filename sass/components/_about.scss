@@ -1,6 +1,5 @@
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 
   @media screen and (min-width: $mobile) {
     padding-top: 60px;
@@ -10,6 +9,11 @@
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
 .about__title {
@@ -31,8 +35,10 @@
 .about__feature {
   justify-content: center;
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -55,15 +61,17 @@
 
   @media screen and (min-width: $mobile) {
   text-align: center;
-  width: 320px;
+
   }
 
   @media screen and (min-width: $tablet) {
+    text-align: left;
     display: block;
     width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
+    text-align: left;
     display: block;
     width: 270px;
   }
@@ -78,7 +86,7 @@
 
   @media screen and (min-width: $mobile) {
   
-    width: 320px;
+    
     }
 
   @media screen and (min-width: $tablet) {
@@ -103,7 +111,7 @@
   border-radius: 4px;
 
   @media screen and (min-width: $mobile) {
-    width: 320px; 
+  
   }
 
   @media screen and (min-width: $tablet) {
