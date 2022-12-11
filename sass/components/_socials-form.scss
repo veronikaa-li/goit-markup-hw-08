@@ -15,7 +15,7 @@
     margin-top: 60px;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -66,7 +66,7 @@
     // flex-basis: 320px;
   }
   @media screen and (min-width: $desktop) {
-    flex-basis: 358px;
+    // flex-basis: 358px;
   }
 }
 

@@ -109,6 +109,16 @@ address {
     height: 60px;
   }
 }
+@media screen and (min-width: 780px) {
+  .header__container {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    height: 80px;
+  }
+}
 
 .header__nav {
   display: -webkit-box;
@@ -402,19 +412,13 @@ address {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 1199px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (max-width: 1199px) and (min-width: 1200px) {
   .about {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -525,7 +529,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  margin: 30px 0;
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--icon-background-color);
   border-radius: 4px;
@@ -746,12 +750,16 @@ address {
 }
 
 .clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
 }
 @media screen and (min-width: 320px) {
   .clients-list {
@@ -760,16 +768,8 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     gap: 30px;
   }
 }
@@ -793,7 +793,7 @@ address {
 .clients-link:hover, .clients-link:focus {
   color: var(--button-color);
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 769px) {
   .clients-link {
     width: 210px;
     height: 92px;
@@ -883,18 +883,6 @@ address {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .adress {
-    margin-left: 76px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .adress {
-    margin-left: 215px;
-    width: 231px;
-  }
-}
-
 .footer-logo {
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -969,11 +957,6 @@ address {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .social-networks {
-    margin: 60px auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .social-networks {
     margin-left: 70px;
@@ -1079,7 +1062,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .socials-form {
-    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1128,13 +1111,6 @@ address {
       flex-basis: 358px;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
-  .form-field {
-    -ms-flex-preferred-size: 358px;
-        flex-basis: 358px;
-  }
-}
-
 .form-field-label {
   display: block;
   font-weight: 400;
