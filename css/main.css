@@ -72,7 +72,7 @@ address {
 }
 @media screen and (min-width: 450px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -412,13 +412,13 @@ address {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 320px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 1199px) and (min-width: 1200px) {
+@media screen and (min-width: 320px) and (min-width: 1200px) {
   .about {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -477,7 +477,7 @@ address {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 320px) {
   .about__title--name {
     text-align: center;
   }
@@ -548,6 +548,12 @@ address {
 @media screen and (max-width: 1199px) {
   .picture {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .picture {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -883,6 +889,12 @@ address {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .adress {
+    text-align: left;
+  }
+}
+
 .footer-logo {
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -912,7 +924,6 @@ address {
 @media screen and (min-width: 1200px) {
   .footer-address {
     text-align: left;
-    margin-left: 40px;
     margin-top: 20px;
   }
 }
@@ -1047,6 +1058,7 @@ address {
   .socials-form {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1152,7 +1164,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .form-input {
-    max-width: 450px;
+    max-width: 358px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1910,7 +1922,6 @@ address {
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -1932,10 +1943,6 @@ address {
 }
 
 .current {
-  color: var(--button-color);
-}
-
-.current::after {
   color: var(--button-color);
 }
 

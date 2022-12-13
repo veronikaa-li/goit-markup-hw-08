@@ -96,7 +96,7 @@
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: var(--primary-text-color);
+  // color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -124,9 +124,9 @@
   color: var(--button-color);
 }
 
-.current::after {
-  color: var(--button-color);
-}
+// .current::after {
+//   color: var(--button-color);
+// }
 
 
 .mobile-contacts-iteam {
